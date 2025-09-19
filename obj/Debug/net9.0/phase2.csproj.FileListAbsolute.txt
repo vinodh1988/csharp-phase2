@@ -1,0 +1,14 @@
+E:\dotnet\phase2\bin\Debug\net9.0\phase2.exe
+E:\dotnet\phase2\bin\Debug\net9.0\phase2.deps.json
+E:\dotnet\phase2\bin\Debug\net9.0\phase2.runtimeconfig.json
+E:\dotnet\phase2\bin\Debug\net9.0\phase2.dll
+E:\dotnet\phase2\bin\Debug\net9.0\phase2.pdb
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.AssemblyInfoInputs.cache
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.AssemblyInfo.cs
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.csproj.CoreCompileInputs.cache
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.dll
+E:\dotnet\phase2\obj\Debug\net9.0\refint\phase2.dll
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.pdb
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.genruntimeconfig.cache
+E:\dotnet\phase2\obj\Debug\net9.0\ref\phase2.dll
