@@ -3,56 +3,20 @@ using phase2;
 
 class Program
 {
-    static void Main()
-    {
-        try{
-            //int x=int.Parse("NotANumber");
-            int a=20;
-            int b=0;
-            int recno=-22;
-            if(recno<0){
-                throw new RecordNotFoundException();
-            }
-
-            //int c=a/b;
-            //Console.WriteLine(c);
-        }
-        catch(DivideByZeroException ex){
-            Console.WriteLine($"Error: {ex.Message}");
-        }
-        catch(FormatException ex){
-            Console.WriteLine($"Format Error: {ex.Message}");
-        }
-        catch(RecordNotFoundException ex){
-            Console.WriteLine($"Record Error: {ex.Message}");
-        }
-        catch(Exception ex){
-            Console.WriteLine($"General Error: {ex.Message}");
-        }
-
-        finally {
-            Console.WriteLine("Finally block runs regardless of exceptions.");
-        }
-        
-        
-        Console.WriteLine("Execution completed.");
-       
-        
-      
-    }
+     static void Main()
+        {
+            Store<int> intStore = new Store<int>();
+            intStore.Data = 42;
+            intStore.DisplayType();
+            intStore.DisplayData();
+            Store<string> stringStore = new Store<string>();
+            stringStore.Data = "Hello, Generics!";
+            stringStore.DisplayType();
+            stringStore.DisplayData();
+            Store<double> doubleStore = new Store<double>();
+            doubleStore.Data = 3.14;
+            doubleStore.DisplayType();
+            doubleStore.DisplayData();
+    
+     }
 }
-
-/*
-  try
-        {
-            int num = int.Parse("NotANumber");
-        }
-        catch (FormatException ex)
-        {
-            Console.WriteLine($"Error: {ex.Message}");
-        }
-        finally
-        {
-            Console.WriteLine("Execution completed.");
-        }
-*/

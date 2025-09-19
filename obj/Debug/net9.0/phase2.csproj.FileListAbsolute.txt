@@ -12,3 +12,4 @@ E:\dotnet\phase2\obj\Debug\net9.0\refint\phase2.dll
 E:\dotnet\phase2\obj\Debug\net9.0\phase2.pdb
 E:\dotnet\phase2\obj\Debug\net9.0\phase2.genruntimeconfig.cache
 E:\dotnet\phase2\obj\Debug\net9.0\ref\phase2.dll
+E:\dotnet\phase2\obj\Debug\net9.0\phase2.sourcelink.json
