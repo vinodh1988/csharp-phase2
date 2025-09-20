@@ -2,6 +2,22 @@
 using System;
 using System.Collections;
 
+Queue queue = new Queue();
+queue.Enqueue(10);
+queue.Enqueue("Rajan");
+queue.Enqueue(30);
+Console.WriteLine("Queue contents:");
+Console.WriteLine(string.Join(", ", queue));
+Console.WriteLine($"Dequeued item: {queue.Dequeue()}");
+Console.WriteLine("Queue contents after dequeue:");
+Console.WriteLine(string.Join(", ", queue));
+Console.WriteLine("Peeking front item:");
+Console.WriteLine($"Front item: {queue.Peek()}");
+foreach(var item in queue)
+{
+    Console.WriteLine($"Item: {item}");
+}
+/*
 Stack stack = new Stack();
 stack.Push(10);
 stack.Push("Rajan");
