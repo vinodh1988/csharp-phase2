@@ -1,10 +1,10 @@
 ﻿
 using System;
-using System.Collections;
+using System.Collections.Generic;
 
-Queue queue = new Queue();
+Queue<int> queue = new Queue<int>();
 queue.Enqueue(10);
-queue.Enqueue("Rajan");
+queue.Enqueue(20);
 queue.Enqueue(30);
 Console.WriteLine("Queue contents:");
 Console.WriteLine(string.Join(", ", queue));
