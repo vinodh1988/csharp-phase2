@@ -1,10 +1,10 @@
 ﻿
 using System;
-using System.Collections.Generic;
+using System.Collections;
 
-Stack<int> stack = new Stack<int>();
+Stack stack = new Stack();
 stack.Push(10);
-stack.Push(20);
+stack.Push("Rajan");
 stack.Push(30);
 Console.WriteLine("Stack contents:");
 Console.WriteLine(string.Join(", ", stack));
@@ -13,7 +13,7 @@ Console.WriteLine("Stack contents after pop:");
 Console.WriteLine(string.Join(", ", stack));
 Console.WriteLine("Peeking top item:");
 Console.WriteLine($"Top item: {stack.Peek()}");
-foreach(int item in stack)
+foreach(var item in stack)
 {
     Console.WriteLine($"Item: {item}");
 }
