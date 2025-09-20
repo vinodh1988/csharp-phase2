@@ -2,10 +2,13 @@
 using System;
 using System.Collections.Generic;
 
-HashSet<int> numbers = new HashSet<int>();
+SortedSet<int> numbers = new SortedSet<int>();
 numbers.Add(10);
 numbers.Add(20);
 numbers.Add(30);
+numbers.Add(15);
+numbers.Add(25);
+numbers.Add(5);
 numbers.Add(20); // Duplicate, will be ignored
 Console.WriteLine("HashSet contents:");
 Console.WriteLine(string.Join(", ", numbers));
