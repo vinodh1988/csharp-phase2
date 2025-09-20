@@ -2,6 +2,35 @@
 using System;
 using System.Collections.Generic;
 
+List<String> names = new List<String>();
+names.Add("Rajan");
+names.Add("Anu");
+names.Add("Sita");
+names.Add("Gita");
+Console.WriteLine("List contents:");
+Console.WriteLine(string.Join(", ", names));
+names.Insert(2, "Mohan");
+Console.WriteLine("List contents after adding at index 2:");
+Console.WriteLine(string.Join(", ", names));
+names.Remove("Sita");
+Console.WriteLine("List contents after removing Sita:");
+Console.WriteLine(string.Join(", ", names));
+names.RemoveAt(1);
+Console.WriteLine("List contents after removing at index 1:");
+Console.WriteLine(string.Join(", ", names));
+names.Sort();
+Console.WriteLine("List contents after sorting:");
+Console.WriteLine(string.Join(", ", names));
+names.Add("Rajan");
+names.Add("Anu");
+Console.WriteLine("List contents after adding duplicates:");
+Console.WriteLine(string.Join(", ", names));
+Console.WriteLine($"Index of Anu: {names.IndexOf("Anu")}");
+foreach(var name in names)
+{
+    Console.WriteLine($"Name: {name}");
+}
+/*
 Queue<int> queue = new Queue<int>();
 queue.Enqueue(10);
 queue.Enqueue(20);
