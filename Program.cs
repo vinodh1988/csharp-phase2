@@ -2,6 +2,24 @@
 using System;
 using System.Collections.Generic;
 
+HashSet<int> numbers = new HashSet<int>();
+numbers.Add(10);
+numbers.Add(20);
+numbers.Add(30);
+numbers.Add(20); // Duplicate, will be ignored
+Console.WriteLine("HashSet contents:");
+Console.WriteLine(string.Join(", ", numbers));
+Console.WriteLine($"Contains 20: {numbers.Contains(20)}");
+Console.WriteLine($"Contains 40: {numbers.Contains(40)}");
+numbers.Remove(20);
+Console.WriteLine("HashSet contents after removing 20:");
+Console.WriteLine(string.Join(", ", numbers));
+foreach(var num in numbers)
+{
+    Console.WriteLine($"Number: {num}");
+}
+/*
+
 List<String> names = new List<String>();
 names.Add("Rajan");
 names.Add("Anu");
