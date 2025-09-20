@@ -1,4 +1,26 @@
-﻿using System;
+﻿
+using System;
+using System.Collections.Generic;
+
+Stack<int> stack = new Stack<int>();
+stack.Push(10);
+stack.Push(20);
+stack.Push(30);
+Console.WriteLine("Stack contents:");
+Console.WriteLine(string.Join(", ", stack));
+Console.WriteLine($"Popped item: {stack.Pop()}");
+Console.WriteLine("Stack contents after pop:");
+Console.WriteLine(string.Join(", ", stack));
+Console.WriteLine("Peeking top item:");
+Console.WriteLine($"Top item: {stack.Peek()}");
+foreach(int item in stack)
+{
+    Console.WriteLine($"Item: {item}");
+}
+
+
+/*
+using System;
 using phase2;
 
 class Program
@@ -20,3 +42,5 @@ class Program
     
      }
 }
+*/
+
