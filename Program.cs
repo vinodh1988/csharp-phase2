@@ -2,6 +2,20 @@
 using System;
 using System.Collections.Generic;
 
+Dictionary<string,string> capitals = new Dictionary<string,string>();
+capitals["USA"] = "Washington, D.C.";
+capitals["France"] = "Paris";
+capitals["Japan"] = "Tokyo";
+capitals["India"] = "New Delhi";
+Console.WriteLine("Dictionary contents:");
+foreach(var kvp in capitals)
+{
+    Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+}
+Console.WriteLine($"Capital of France: {capitals["France"]}");
+Console.WriteLine($"Contains key 'Germany': {capitals.ContainsKey("Germany")}");
+Console.WriteLine($"Contains value 'Tokyo': {capitals.ContainsValue("Tokyo")}");
+/*
 SortedSet<int> numbers = new SortedSet<int>();
 numbers.Add(10);
 numbers.Add(20);
