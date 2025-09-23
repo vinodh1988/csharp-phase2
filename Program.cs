@@ -1,7 +1,38 @@
 ﻿
 using System;
-using System.Collections.Generic;
 
+class Program{
+
+   static void Main()
+   {
+     try{
+        Console.WriteLine("Enter your name:");
+        string name = Console.ReadLine();
+        Console.WriteLine($"Hello, {name}!");
+        Console.WriteLine("Enter years of experience:");
+        int years = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine($"You have {years} years of experience.");
+        Console.WriteLine("Enter your salary:");
+        double salary = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine($"Your salary is {salary}.");
+     }
+     catch(FormatException e){
+        Console.WriteLine("Input format is incorrect. Please enter valid data.");
+     }
+     catch(OverflowException e){
+        Console.WriteLine("Input value is too large or too small.");
+     }
+     catch(Exception e){
+        Console.WriteLine($"An unexpected error occurred: {e.Message}");
+     }
+     finally{
+        Console.WriteLine("Thank you for using the program.");
+     }
+   }
+}
+/*
+using System;
+using System.Collections.Generic;
 Dictionary<string,string> capitals = new Dictionary<string,string>();
 capitals["USA"] = "Washington, D.C.";
 capitals["France"] = "Paris";
