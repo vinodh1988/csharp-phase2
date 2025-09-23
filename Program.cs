@@ -1,6 +1,43 @@
 ﻿
 using System;
+using System.IO;
 
+class Program{
+    static void Main()
+    {
+        string filePath = "example.txt";
+        try
+        {
+            // Writing to a file
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                writer.WriteLine("Hello, World!");
+                writer.WriteLine("This is a sample text file.");
+            }
+            Console.WriteLine("File written successfully.");
+
+            // Reading from a file
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                string line;
+                Console.WriteLine("File contents:");
+                while ((line = reader.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
+            }
+        }
+        catch (IOException e)
+        {
+            Console.WriteLine($"An I/O error occurred: {e.Message}");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"An unexpected error occurred: {e.Message}");
+        }
+    }
+}
+/*using System.Collections;
 class Program{
 
    static void Main()
